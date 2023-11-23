@@ -1,5 +1,4 @@
 const { Sequelize } = require('sequelize')
-const {getenv} = require("os");
 
 // Database
 const sequelize = new Sequelize(
