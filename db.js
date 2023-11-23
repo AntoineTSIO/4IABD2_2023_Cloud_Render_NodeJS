@@ -1,15 +1,9 @@
 const { Sequelize } = require('sequelize')
 const {getenv} = require("os");
 
-// Database connection URL
-const connectionString = getenv('External_Database_URL');
-
-// Database connection URL
-const connectionString = 'External_Database_URL';
-
 // Database
 const sequelize = new Sequelize(
-  connectionString,
+  process.env.Internal_Database_URL,
   {
     dialect: 'postgres',
     dialectOptions: {

@@ -10,10 +10,4 @@ router.get('/', function (req, res, next) {
   })
 })
 
-// Get DB page
-router.get('/db', function (req, res, next) {
-  // Utilisez les fonctions ou données de db.js selon vos besoins
-  res.send('Access to db.js');
-});
-
 module.exports = router
